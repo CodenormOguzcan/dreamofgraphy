@@ -32,6 +32,7 @@
   max-height: 650px;
   max-width: 650px;
   height: auto;
+  width: auto;
 }
 #rechtesTextblock{
   flex-basis: fit-content;
