@@ -1,0 +1,52 @@
+.row {
+  margin-bottom: 5rem;
+  background-color: #c8c8a9;
+  border: 0.4rem solid rgba(132, 149, 97, 0.5);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+.film-box {
+  text-align: center;
+}
+.film-box > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+.film-box > p {
+  font-size: 1.2rem;
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9-Seitenverhältnis (9 geteilt durch 16 multipliziert mit 100) */
+  border: 0.4rem solid #849561;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ======== MEDIA SCREEN BEREICH =====================================================================================*/
+@media (max-width: 1366px) {
+  .col-3{
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .intro-container p {
+    font-size: 1rem;
+  }
+  .film-box > h2 {
+    font-size: 0.8rem;
+  }
+  .film-box > p {
+    font-size: 0.6rem;
+  }
+}
+
+

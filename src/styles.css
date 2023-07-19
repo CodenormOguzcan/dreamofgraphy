@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  font-family: 'Courgette', cursive,
+               'Dancing Script', cursive,
+               'Italianno', cursive,
+               'Raleway', 'Lato', Helvetica, 'Arial', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: #1c1e24;
+}
+
+:focus {
+  padding: 0.25rem;
+  outline: none;
+  border-radius: 0.31rem;
+  border: white 1px solid;
+  box-shadow: 0 0 2px 2px #E5E5E5, 0 0 10px #E5E5E5;
+}
+section {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.background-1{
+  background: url("src/assets/31386487_l658.jpg") -50rem -54rem;
+}
+.background-2{
+  background: url("src/assets/31386487_l658.jpg") -150rem -50rem;
+}
+.intro-container {
+  text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+}
+
+.intro-container > h1 {
+  font-size: 2.4rem;
+}
+
+.intro-container > p {
+  font-size: 1.4rem;
+}
+/* === GRID-SYSTEM */
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::after {   /*sorgt dafür dass die Elemente in den Rows nicht ineinander geraten*/
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding: .8rem;
+}
+
+.col-1 { width: 16.666%; }
+.col-2 { width: 33.333%; }
+.col-3 { width: 50%; }
+.col-4 { width: 66.666% }
+.col-5 { width: 83.333% }
+.col-6 { width: 100%; }
+
+
+@media (max-width: 1024px){
+  .col-1 { width: 33.333%; }
+}
+
+@media (max-width: 768px){
+  .col-1 { width: 50%; }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+  .col-5 { width: 100%; }
+
+}
+
+@media (max-width: 480px){
+  .col-1 { width: 100%; }
+  .col-2 { width: 100%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 100%; }
+  .col-5 { width: 100%; }
+
+  .intro-container > h1 {
+    font-size: 1.7rem;
+  }
+  .intro-container > p {
+    font-size: 1rem;
+  }
+}
+
