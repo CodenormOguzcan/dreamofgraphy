@@ -1,0 +1,199 @@
+<section class="home-section">
+  <div class="row">
+    <div class="col-6">
+      <header class="intro-container">
+        <h1>Herzlich Willkommen</h1>
+      </header>
+    </div>
+  </div>
+  <!-- VORSTELLUNG -------------------------------------------------------------------------------------------------->
+  <section id="vorstellung" class="background-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="bild-container">
+            <picture>
+              <img src="https://live.staticflickr.com/65535/53055388313_f10bb3f8db_o.jpg" width="5184" height="3456" alt="IMG_9452"/>
+            </picture>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="text-container">
+            <p>Willkommen auf unserer Seite, wo wir die Kunst des Einfangens von Momenten, das Erzählen von Geschichten und
+               das Eintauchen in die Schönheit der Welt zelebrieren. </p>
+            <p>Von der ersten Begegnung bis hin zum "Ja" am Altar - unsere Kameras sind Zeugen der Liebe in all ihren Facetten.
+               Mit einem Blick für Details und einer Prise Magie verwandeln wir Verlobungen, Trauungen und Hochzeiten in zeitlose Meisterwerke,
+               die das Herz berühren und die Erinnerungen am Leben erhalten.</p>
+            <p>Willkommen in unserer Welt, in der die Kunst der Fotografie, des Films und der Drohnenaufnahmen verschmelzen.
+               Lass dich von unseren Bildern verzaubern, von unseren Filmen berühren und von unserer Begeisterung für
+               die Schönheit des Lebens mitreißen. Wir sind hier, um eure Momente zu verewigen, eure Geschichten zu erzählen
+               und eure Träume visuell zum Leben zu erwecken. </p>
+            <p>Schließt die Augen und taucht ein in unsere Galerie der Emotionen, denn hier beginnt eine Reise, die niemals endet.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unsere Päärchen Slick Carousel ------------------------------------------------------------------------------------------------->
+  <section id="paar-slider" class="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="slider-title">Erlebe den Zauber der Liebe - Eine Sammlung unvergesslicher Momente und strahlender Paare, die ihre Liebe bei Verlobungen,
+                                    Trauungen und Hochzeiten zelebrieren.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="slider-container">
+            <ngx-slick-carousel class="slick-carousel" #slickCarousel="slick-carousel" [config]="carouselConfig1">
+              <div ngxSlickItem *ngFor="let item of carouselItems1">
+                <img [src]="item.image" alt="Carousel Slide">
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="button-container">
+            <a class="button slider-text" routerLink="/photografy-section"> Hier gelangst du zu unseren Alben </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="slider-text">Verewige auch du deine schönsten Momente und Reihe dich ein zu unseren glücklichen Paaren</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="button-container">
+          <a class="button-typ-1 slider-text" routerLink="/contact">Kontaktiere uns</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO ABSCHNITT -------------------------------------------------------------------------------------------- -->
+  <section id="video-bereich">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <header class="intro-container">
+            <h1>Hanife & Burak</h1>
+            <p>Tauche ein in die romantische Atmosphäre und die tiefe Liebe sowie das gemeinsame Glück unseres Hochzeitspaares.
+               Diese mit Leidenschaft aufgenommenen Drohnenaufnahmen nehmen dich mit auf eine emotionale Reise,
+               die das Wesen der Liebe in der magischen Metropole Istanbul widerspiegelt."
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/vvWuEpZREuA?start=0&end=93&vq=hd1080&autoplay=1&loop=1&modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&playlist=vvWuEpZREuA&mute=1" title="Hanife ve Burak | Wedding Clip" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="button-container">
+            <a class="button slider-text" routerLink="/all-inclusive-section"> Schaue dir weitere romantische Filme & Clips von unseren Paaren an </a>
+            <a id="mobil-button" class="button slider-text" routerLink="/all-inclusive-section"> weitere Filme & Clips </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Abschnitt mit einem Slick Carousel, das durch Berührung gewechselt werden kann -->
+  <!-- Slick Carousel -------------------------------------------------------------------------------------------------->
+  <section id="slider2" class="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+              <header class="intro-container">
+                <h1>Aylin & Sedat</h1>
+                <p>Ein magischer und wichtiger Moment einer türkischen Dame,
+                  in dem ihr Herz vor Aufregung und Hoffnung pulsiert, während sie den Segen ihrer Eltern für eine erfüllte Zukunft der Liebe und einer gemeinsamen Hochzeit erhofft.
+                  Tauche ein in diese emotionale Reise und spüre die Intensität dieses bedeutungsvollen Augenblicks.</p>
+              </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="slider-container">
+            <ngx-slick-carousel class="slick-carousel" #slickCarousel="slick-carousel" [config]="carouselConfig2">
+              <div ngxSlickItem *ngFor="let item of carouselItems2">
+                <img [src]="item.image" alt="Carousel Slide">
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="button-container">
+            <a class="button slider-text" routerLink="/photografy-section"> Weitere Alben </a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="button-container">
+            <a class="button slider-text" routerLink="/all-inclusive-section"> Weitere Filme & Clips </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-------------------------------------------------------------- Service Bereich  ------------------------------------------------------------------>
+
+<section id="service-bereich">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <header class="intro-container">
+          <h1>Unsere Services</h1>
+          <p>Wir bieten eine vielzahl an professionellen Services die auch in Kombination möglich sind. Sprechen sie uns an.</p>
+          <a class="button-typ-1" routerLink="/contact">Kontakt</a>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <article class="service-box">
+          <div id="drohnen-icon" class="service-icon"></div>
+          <h1>Drohnenaufnahmen</h1>
+          <p>unsere Drohnenaufnahmen werden hoch professionell und sicher durch Erfahrene Piloten aufgenommen</p>
+        </article>
+      </div>
+      <div class="col-2">
+        <article class="service-box">
+          <div id="kamera-icon"class="service-icon"></div>
+          <h1>Fotografie</h1>
+          <p>Unsere Fotografen fotografieren mit Leidenschaft & benutzen das neueste Equipment </p>
+        </article>
+      </div>
+      <div class="col-2">
+        <article class="service-box">
+          <div id="video-icon"class="service-icon"></div>
+          <h1>Videoaufnahmen</h1>
+          <p>Unsere Videos werden mit Liebe zum Detail aufgenommen um die besten Momente cinematisch aufzuzeichnen</p>
+        </article>
+      </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-6">
+        <div class="button-container">
+          <p>Schauen Sie unsere Preise und Service Pakete im Detail an</p>
+          <a class="button-typ-1" routerLink="/services"> Service Pakete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,117 @@
+/* === Leistungen =============================================================================== */
+.leistung{
+  border: 3px solid #a0937d;
+  background: #ecefd8;
+  margin: 5rem auto;
+  width: 93%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+.container{
+  width: 90%;
+}
+.row{
+  background-color: #ecefd8;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  border: darkolivegreen 0.5rem solid;
+}
+
+[class*='col-']{
+  background-color: #ecefd8;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  border: 3px solid #a0937d;
+}
+.col-6 p {
+  font-size: 1.3rem;
+}
+.col-2{
+  margin-top: 2rem;
+  margin-left: 0.3rem;
+  width: calc((100% - 3rem)/3);
+  padding: 1.5rem;
+}
+.paket-container{
+  border: 3px solid #a0937d;
+  height: 20rem;
+}
+.paketinhalt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 3.2rem); /* Abzug der Höhe des Preis-Paragraphen */
+}
+.paketinhalt ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paketinhalt p:last-child {
+  margin-top: auto; /* Platzieren Sie den Preis ganz unten */
+}
+.hauptpaket-container{
+  margin: 1rem;
+  height: 30rem;
+}
+.hauptpaket-container:hover{
+  box-shadow: 0 0 2rem 1rem navajowhite;
+}
+.hauptpaket-container:hover .angebot {
+  border: 3px goldenrod solid;
+  box-shadow: 0 0 0.5rem rgba(218, 165, 32, 0.5), inset 0 0 0.5rem rgba(218, 165, 32, 0.8);
+}
+
+.hauptpaket-container p:last-child{
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+.empfehlung, .haupt-paketname{
+  font-weight: bold;
+}
+p{
+  border: 0.2rem solid dimgrey;
+  background-color: #849561;
+  padding: 0.8rem;
+  margin: 0;
+  color: black;
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+ul, li, .paketinhalt{
+  background-color: #ecefd8;
+}
+/* ======== MEDIA SCREEN BEREICH =====================================================================================*/
+@media (max-width: 1500px) {
+  .paket-container {
+    height: 30rem;
+  }
+  .hauptpaket-container {
+    height: 38rem;
+  }
+}
+
+@media (max-width: 1110px) {
+  .container{
+    background-color: #fff1ce;
+  }
+  .col-2 {
+    min-width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+    margin-bottom: 2rem;
+  }
+  .paketinhalt {
+    display: inline-block;
+  }
+  .paketinhalt li{
+    font-size: 0.8rem;
+  }
+}
+
+
+
+

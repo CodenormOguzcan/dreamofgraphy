@@ -1,0 +1,135 @@
+*{
+  background-color: #ecefd8;
+}
+.container{
+  border: 0.3rem solid #849561;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+#about-section {
+  margin: 5rem 5rem 9rem;
+  background-color: #c8c8a9;
+  border: 0.2rem solid #849561;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+.intro-container {
+  text-align: center;
+}
+.text-box{
+  hyphens: auto;
+  text-align: justify;
+}
+.about-container {
+  display: flex;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  align-items: center;
+  border: #849561 0.6rem solid;
+  padding-bottom: 0.2rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+.bild-box img {
+  max-height: 650px;
+  max-width: 650px;
+  height: auto;
+}
+#rechtesTextblock{
+  flex-basis: fit-content;
+}
+#linkesBild {
+  width: 100%;
+  text-align: left;
+}
+#rechtesBild {
+  text-align: right;
+}
+p {
+  font-size: 1.2rem;
+}
+#schlusssatz {
+  border: none;
+  box-shadow: none;
+}
+#schlusssatz .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ======== SLIDER CONTAINER  ========================================================================================*/
+.slider-container {
+  max-width: 80%;
+  margin: auto auto 5rem auto;
+  position: relative;
+  border: 0.6rem #849561 solid;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+
+}
+.slick-slide {
+  width: 100%;
+  height: 300px; /* Beispielhöhe - anpassen nach Bedarf */
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+  padding: 0.1rem;
+}
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1rem #9dab86 double;
+}
+
+/* ======== MEDIA SCREEN BEREICH =====================================================================================*/
+@media (max-width: 1600px) {
+  p {
+    font-size: 1.1rem;
+  }
+  .intro-container > h1 {
+    font-size: 1.5rem;
+  }
+  #rechtesBild{
+    order: -1;
+  }
+  #rechtesBild img{
+    width: 100%;
+    height: auto;
+  }
+  #linkesBild{
+    order: -2;
+    text-align: center;
+
+  }
+  #linkesBild img{
+    width: 100%;
+    height: auto;
+  }
+  .about-container{
+    flex-direction: column;
+    margin-bottom: 3rem;
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+    border: #849561  0.6rem solid;
+  }
+  .col-3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .text-box {
+    width: 80%;
+  }
+  #about-section{
+    width:95%;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 768px) {
+  .about-container{
+    border: #849561  0.2rem solid;
+  }
+  .bild-box, .text-box {
+    width: 80%;
+  }
+}

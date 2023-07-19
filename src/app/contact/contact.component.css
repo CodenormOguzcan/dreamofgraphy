@@ -1,0 +1,67 @@
+
+.contact-section {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  background: center / cover no-repeat url("src/assets/Oguzcan Oezcetin_5171.jpg");
+  border: 0.4rem solid #849561;
+  margin: 5rem 10rem;
+}
+.contact-container {
+  width: 50%;
+  margin: 5rem auto 10rem;
+  border: 2rem solid #849561;
+  border-radius: 5px;
+  box-shadow: 5rem 0rem 10rem rgba(155, 155, 155, 0.5);
+  background-color: rgba(155, 155, 155, 0.5);
+}
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.form-group {
+  margin-bottom: 10px;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: darkolivegreen;
+}
+
+/*==== MEDIA SCREEN BEREICH === -------------------------------------------------------------------------------------*/
+@media (max-width: 1024px){
+  .contact-section{
+    width: 100%;
+    margin: 1rem auto 1rem;
+    border: none;
+  }
+  .contact-container{
+    width:90%;
+    border: 0.6rem solid #849561;
+  }
+}

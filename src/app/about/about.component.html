@@ -1,0 +1,75 @@
+<section id="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <header class="intro-container">
+          <h1> Das sind wir</h1>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <article class="about-container">
+        <div id="linkesTextblock" class="col-3 text-box">
+          <p> Hallo, ich bin Oguzcan,
+              ein begeisterter Wirtschaftsinformatiker mit einem Hang zur Kreativität und technischen Raffinesse.
+              Nachdem ich meinen Master in Wirtschaftsinformatik erfolgreich abgeschlossen habe, arbeite ich derzeit als Fullstack-Entwickler,
+              wo ich meine Fähigkeiten in der Welt der digitalen Lösungen voll ausleben kann.
+              Doch meine Leidenschaft geht weit über den Code hinaus. </p>
+           <p>Ich bin fasziniert von der Kunst, Momente einzufangen und Geschichten zu erzählen
+              - sei es durch Drohnenaufnahmen, Videografie oder Fotografie. Diese Hingabe zur visuellen Ästhetik hat mich zu einer vielseitigen Persönlichkeit gemacht,
+              die immer auf der Suche nach neuen kreativen Herausforderungen ist. </p>
+          <p> Als begeisterter Reisender habe ich das Glück, die Schönheit und Vielfalt unserer Welt zu erkunden.
+              Während meiner Abenteuer habe ich meine Kamera und Drohne stets an meiner Seite, um magische Augenblicke festzuhalten und die Essenz jeder Umgebung einzufangen.
+              Jedes Bild erzählt eine Geschichte und erweckt Erinnerungen zum Leben. </p>
+        </div>
+        <div id="rechtesBild" class="col-3 bild-box">
+          <picture>
+            <img src="https://live.staticflickr.com/65535/53056503711_4c5c06ba43_o.jpg" width="3189" height="4000" alt="IMG_4375"/>
+          </picture>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="slider-container">
+          <ngx-slick-carousel class="slick-carousel" #slickCarousel="slick-carousel" [config]="carouselConfig1">
+            <div ngxSlickItem *ngFor="let item of carouselItems1">
+              <img [src]="item.image" alt="Carousel Slide">
+            </div>
+          </ngx-slick-carousel>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <article class="about-container">
+        <div id="linkesBild" class="col-3 bild-box">
+          <picture>
+            <img src="https://live.staticflickr.com/65535/53054918094_cb498f509a_o.jpg" width="5184" height="3456" alt="Ruffy_4"/>
+          </picture>
+        </div>
+          <div id="rechtesTextblock" class="col-3 text-box">
+            <p> Ein weiterer wichtiger Teil meines Lebens ist mein treuer Begleiter Ruffy, ein belgischer Schäferhund.
+                Dank ihm habe ich gelernt, jeden Augenblick im Hier und Jetzt zu schätzen. Obwohl er nicht selbst vor der Kamera steht,
+                nimmt er eine bedeutende Rolle in meiner fotografischen Reise ein. </p>
+            <span><p> Mit meiner Leidenschaft für Technologie, meiner kreativen Ader und meinem Sinn für Abenteuer möchte ich Menschen inspirieren und berühren.
+                In meiner Arbeit strebe ich danach, innovative Lösungen zu schaffen, die das Potenzial haben, die Welt zu verändern.
+                Von der Entwicklung von benutzerfreundlichen Anwendungen bis hin zur Produktion visuell ansprechender Inhalte - ich verfolge stets das Ziel,
+                Menschen zu begeistern und ihnen ein Lächeln ins Gesicht zu zaubern. </p></span>
+               <p> Ich lade Sie herzlich ein, meine Arbeit und meine Welt kennenzulernen. Gemeinsam können wir die Grenzen der Kreativität erweitern und Neues schaffen.
+                Kontaktieren Sie mich gerne, um mehr über meine Dienstleistungen zu erfahren oder um einfach nur eine Tasse Kaffee zu trinken und Ideen auszutauschen. </p>
+          </div>
+      </article>
+      <div class="row">
+        <article id="schlusssatz" class="about-container">
+          <div class="col-6 text-box">
+            <p> Ich freue mich darauf, Ihre Vision zum Leben zu erwecken!</p>
+            <p> Oguz-Can Özcetin</p>
+          </div>
+
+          </article>
+        </div>
+      <br>
+    </div>
+  </div>
+</section>
+  <app-footer></app-footer>

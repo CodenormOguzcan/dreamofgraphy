@@ -1,0 +1,71 @@
+/*===== FOOTER =======================================================================================================*/
+
+#footer {
+  border: antiquewhite 3px solid;
+  background: linear-gradient(to right, #849561, #393939);
+  height: 4rem;
+  width: 100%;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+
+}
+
+#footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+#footer-nav span {
+  margin-right: 27rem;
+}
+
+#insta-logo {
+  background: url("src/assets/sprites/instagram_sign.png") no-repeat;
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+  margin-right: auto;
+}
+
+#youtube-logo {
+  background: url("src/assets/sprites/youtube_sign.png") no-repeat;
+  background-size: cover;
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: auto;
+}
+
+#footer-nav a:last-child {
+  margin-right: 0;
+}
+
+#footer-nav a:link {
+  color: black;
+}
+#footer-nav a:visited {
+  color: #f0f0f0;
+}
+#footer-nav a:hover {
+  color: #f0f0f0;
+}
+#footer-nav a:active {
+  color: #f0f0f0;
+}
+
+
+/* ======== MEDIA SCREEN BEREICH =====================================================================================*/
+@media (max-width: 1024px) {
+  #footer {
+    height: 3rem;
+  }
+#footer-nav  span{
+    margin-right:0;
+    display: none;
+  }
+}

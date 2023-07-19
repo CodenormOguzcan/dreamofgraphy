@@ -1,0 +1,56 @@
+<section class="contact-section">
+  <div class="intro-container"><h1>Lassen Sie uns Ihre Träume verwirklichen!</h1></div>
+    <div class="contact-container">
+      <h2>Kontakt</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="firstName">Vorname</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Nachname</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefonnummer</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="company">Firma</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+          <label for="attention">Wie sind sie auf uns aufmerksam geworden?</label>
+          <select id="attention" name="attention" required>
+            <option value="" disabled selected>Bitte wählen Sie</option>
+            <option value="social-media">Social Media</option>
+            <option value="sozUmkreis">Freunde, Bekannte oder Familie</option>
+            <option value="werbung">Werbung</option>
+            <option value="anderes">Anders</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="subject">Betreff</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Bitte wählen Sie</option>
+            <option value="Projekt">Ich kontaktiere Sie bezüglich eines Projekts</option>
+            <option value="Videoaufnahme">Ich kontaktiere Sie bezüglich einer Anfrage für eine Videoaufnahme</option>
+            <option value="Fotografieaufnahmen">Ich kontaktiere Sie bezüglich einer Anfrage für Fotografieaufnahmen</option>
+            <option value="Anderes">Ich kontaktiere Sie bezüglich eines anderen Anliegens</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Nachricht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Absenden</button>
+        </div>
+      </form>
+    </div>
+  <app-footer></app-footer>
+</section>

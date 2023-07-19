@@ -1,0 +1,180 @@
+/* ======== LEISTUNGEN BEREICH =======================================================================================*/
+
+.leistungs-box {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  background-color: #849561;
+  text-align: center;
+  padding: 1rem 3rem 2.5rem;
+  width: 60%;
+  min-height: 400px;
+}
+.leistungs-box > h2 {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+.leistungs-box > p {
+  font-size: 18px;
+}
+#leistungen-bereich .row > .col-3:nth-last-of-type(even) > .leistungs-box {
+  margin-right: 2.5rem;
+  margin-left: auto;
+}
+
+#leistungen-bereich .row > .col-3:nth-last-of-type(odd) > .leistungs-box {
+  margin-left: 2.5rem;
+  margin-right: auto;
+}
+.leistungen-ansehen-button {
+  margin-top: 0.8rem;
+  text-decoration: none;
+  height: 40px;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 10px;
+  padding-top: .4rem;
+  width: 20%;
+  min-width: 90px;
+}
+
+.leistungen-ansehen-button:link {
+  color: black;
+}
+
+.leistungen-ansehen-button:visited {
+  color: black;
+}
+
+.leistungen-ansehen-button:hover {
+  color: #f0f0f0;
+  font-weight: bold;
+  border: 2px solid #ecefd8;
+  box-shadow: 0 0 10px 5px #ecefd8;
+}
+.leistungen-ansehen-button:active {
+  color: black;
+}
+
+/* <== VIDEO BEREICH ================================================================================================> */
+
+#video-bereich {
+  background-color: #ecefd8;
+}
+
+.video-container {
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 36.65%; /* 16:9 Aspect Ratio (9 divided by 16 multiplied by 100) */
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* <== SERVICE BEREICH =================================================================================================> */
+
+#service-bereich{
+  background-color: #f0f0f0;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+.service-box h1 {
+  font-size: 1.3rem;
+}
+#service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box {
+  margin-right: 0;
+  margin-left:auto;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(2) > .service-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*#bilder-bereich .row:nth-of-type(2) > .col-2:last-of-type{*/
+/*  margin-left: auto;*/
+/*  margin-right: 0;*/
+/*}*/
+.kontakt-button{
+  color: black;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border: #3D3F45 0.2rem solid;
+}
+.kontakt-button:hover{
+  border: #3D3F45 0.4rem solid;
+}
+
+.service-icon {
+  width: 110px;
+  height: 110px;
+  background-color: #3D3F45;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#drohnen-icon {
+  background: floralwhite url("src/assets/sprites/drohne.png") no-repeat left 8px top 0.6rem;
+}
+#kamera-icon {
+  background: floralwhite url("src/assets/sprites/kamera.png") no-repeat left 20px top 1rem;
+}
+#video-icon {
+  background: floralwhite url("src/assets/sprites/videokamera.png") no-repeat left 20px top 1rem;
+}
+
+/* ======== MEDIA SCREEN BEREICH =====================================================================================*/
+@media (max-width: 1960px) {
+    .leistungs-box {
+    width: 90%;
+    min-height: 400px;
+  }
+  .leistungs-box > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .leistungs-box {
+    width: 100%;
+    min-height: 450px;
+  }
+
+  #service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
+    margin-right: auto;
+    margin-left:auto;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .col-3{
+    width: 100%;
+  }
+
+  .leistungs-box {
+    width: 100%;
+    min-height: 0;
+  }
+  #leistungen-bereich .row > .col-3:nth-last-of-type(even) > .leistungs-box {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #leistungen-bereich .row > .col-3:nth-last-of-type(odd) > .leistungs-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
