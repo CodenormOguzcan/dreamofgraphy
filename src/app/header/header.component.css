@@ -48,7 +48,7 @@
 }
 .webseite-name h1 {
   font-size: 1.9rem;
-  font-family: "Dancing Script";
+  font-family:"Dancing Script";
   color: white
 }
 nav label {
@@ -119,7 +119,20 @@ nav ul li a.active:not(.home-link) {
 }
 
 @media screen and (max-width: 768px) {
-
+  .header{
+    padding: 0;
+  }
+  .banner {
+    margin-top: 3rem;
+  }
+  .webseite-name h1 {
+    font-size: 1.5rem;
+  }
+  .logo img {
+    width: 40px;
+    height: auto;
+    display: none;
+  }
   nav ul {
     flex-direction: column;
     position: fixed;
@@ -156,6 +169,7 @@ nav ul li a.active:not(.home-link) {
 
   #menu-toggle ~ .menu-icon {
     display: block;
+    margin-right: 1rem;
   }
 
   #menu-toggle:checked ~ .liste {

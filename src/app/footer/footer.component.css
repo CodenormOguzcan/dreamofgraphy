@@ -1,9 +1,8 @@
 /*===== FOOTER =======================================================================================================*/
 
 #footer {
-  border: antiquewhite 3px solid;
   background: linear-gradient(to right, #849561, #393939);
-  height: 4rem;
+  height: 3.4rem;
   width: 100%;
   color: black;
   position: fixed;
@@ -62,7 +61,7 @@
 /* ======== MEDIA SCREEN BEREICH =====================================================================================*/
 @media (max-width: 1024px) {
   #footer {
-    height: 3rem;
+    height: 2.8rem;
   }
 #footer-nav  span{
     margin-right:0;
