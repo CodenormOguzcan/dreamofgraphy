@@ -10,6 +10,8 @@ import {VideografySectionComponent} from "./portfolio/section/videografy-section
 import {PhotografySectionComponent} from "./portfolio/section/photografy-section/photografy-section.component";
 import {DroneSectionComponent} from "./portfolio/section/drone-section/drone-section.component";
 import {AllSectionComponent} from "./portfolio/section/all-section/all-section.component";
+import {ImpressumComponent} from "./impressum/impressum.component";
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,7 +22,8 @@ const routes: Routes = [
   { path: 'video-section', component: VideografySectionComponent},
   { path: 'drone-section', component: DroneSectionComponent},
   { path: 'photografy-section', component: PhotografySectionComponent},
-  { path: 'all-inclusive-section', component: AllSectionComponent}
+  { path: 'all-inclusive-section', component: AllSectionComponent},
+  { path: 'impressum', component: ImpressumComponent}
 
 ];
 

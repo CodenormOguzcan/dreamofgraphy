@@ -15,6 +15,7 @@ import { PhotografySectionComponent } from './portfolio/section/photografy-secti
 import { VideografySectionComponent } from './portfolio/section/videografy-section/videografy-section.component';
 import { DroneSectionComponent } from './portfolio/section/drone-section/drone-section.component';
 import { AllSectionComponent } from './portfolio/section/all-section/all-section.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AllSectionComponent } from './portfolio/section/all-section/all-section
     PhotografySectionComponent,
     VideografySectionComponent,
     DroneSectionComponent,
-    AllSectionComponent
+    AllSectionComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
