@@ -127,10 +127,33 @@ p {
   }
 }
 @media (max-width: 768px) {
+  section{
+    padding: 1rem 0;
+  }
+  .intro-container {
+   margin-bottom: 1rem;
+  }
   .about-container{
-    border: #849561  0.2rem solid;
+    border: none;
+    box-shadow: none;
+    margin: auto 0.1rem;
   }
   .bild-box, .text-box {
-    width: 80%;
+    width: 90%;
   }
+  /*===============SLIDER===========================================================================================*/
+  .slider-container {
+    max-width: 95%;
+    margin: auto auto 2rem auto;
+    border: 0.3rem #849561 solid;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
+
+  }
+  .slick-slide {
+    min-height: 270px; /* Beispielhöhe - anpassen nach Bedarf */
+  }
+  .slick-slide img {
+    border: 0.7rem #9dab86 double;
+  }
+
 }

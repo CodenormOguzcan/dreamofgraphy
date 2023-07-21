@@ -64,9 +64,11 @@
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
   font-weight: bold;
 }
-
 .empfehlung, .haupt-paketname{
   font-weight: bold;
+}
+.empfehlung{
+  color:goldenrod;
 }
 p{
   border: 0.2rem solid dimgrey;
@@ -110,8 +112,57 @@ ul, li, .paketinhalt{
   .paketinhalt li{
     font-size: 0.8rem;
   }
+
+  .order-box{
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
 }
 
+
+@media (max-width: 768px) {
+  /* === Leistungen =============================================================================== */
+  section{
+    padding-top: 1rem;
+  }
+  .leistung{
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .container{
+    width: 95%;
+  }
+  .row{
+    border: darkolivegreen 0.3rem solid;
+  }
+  [class*='col-']{
+    border: 1px solid #a0937d;
+  }
+  .col-6 p {
+    font-size: 1rem;
+  }
+  .col-2{
+    margin: 0.2rem auto;
+    width: auto;
+    padding: 1rem;
+  }
+  .paket-container{
+    border: 3px solid #a0937d;
+    margin: 1rem;
+  }
+  .hauptpaket-container{
+    margin: 1rem;
+  }
+}
 
 
 

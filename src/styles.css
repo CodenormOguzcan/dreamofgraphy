@@ -78,7 +78,9 @@ section {
   .col-3 { width: 100%; }
   .col-4 { width: 100%; }
   .col-5 { width: 100%; }
-
+  .container {
+    width: 95%;
+  }
 }
 
 @media (max-width: 480px){
