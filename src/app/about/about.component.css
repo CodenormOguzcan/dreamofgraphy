@@ -6,7 +6,7 @@
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
 }
 #about-section {
-  margin: 5rem 5rem 9rem;
+  margin: 3rem 5rem;
   background-color: #c8c8a9;
   border: 0.2rem solid #849561;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
@@ -83,11 +83,16 @@ p {
 
 /* ======== MEDIA SCREEN BEREICH =====================================================================================*/
 @media (max-width: 1600px) {
+  #about-section{
+    width:95%;
+    margin: 3rem auto;
+
+  }
   p {
-    font-size: 1.1rem;
+    font-size: 16px;
   }
   .intro-container > h1 {
-    font-size: 1.5rem;
+    font-size: 22px;
   }
   #rechtesBild{
     order: -1;
@@ -121,14 +126,10 @@ p {
   .text-box {
     width: 80%;
   }
-  #about-section{
-    width:95%;
-    margin: 1rem auto;
-  }
 }
 @media (max-width: 768px) {
   section{
-    padding: 1rem 0;
+    padding-top: 1rem;
   }
   .intro-container {
    margin-bottom: 1rem;

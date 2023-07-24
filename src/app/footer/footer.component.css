@@ -62,6 +62,7 @@
 @media (max-width: 1024px) {
   #footer {
     height: 2.8rem;
+    display: none;
   }
 #footer-nav  span{
     margin-right:0;

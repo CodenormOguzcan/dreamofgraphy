@@ -85,7 +85,7 @@ ul, li, .paketinhalt{
   background-color: #ecefd8;
 }
 /* ======== MEDIA SCREEN BEREICH =====================================================================================*/
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .paket-container {
     height: 30rem;
   }
@@ -94,7 +94,7 @@ ul, li, .paketinhalt{
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1210px) {
   .container{
     background-color: #fff1ce;
   }
@@ -131,9 +131,6 @@ ul, li, .paketinhalt{
 
 @media (max-width: 768px) {
   /* === Leistungen =============================================================================== */
-  section{
-    padding-top: 1rem;
-  }
   .leistung{
     margin: 1rem auto;
     width: 100%;

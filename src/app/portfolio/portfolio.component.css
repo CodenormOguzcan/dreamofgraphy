@@ -1,3 +1,6 @@
+.intro-container p{
+  font-size: 20px;
+}
 /* ======== LEISTUNGEN BEREICH =======================================================================================*/
 
 .leistungs-box {
@@ -134,7 +137,7 @@
 
 /* ======== MEDIA SCREEN BEREICH =====================================================================================*/
 @media (max-width: 1960px) {
-    .leistungs-box {
+  .leistungs-box {
     width: 90%;
     min-height: 400px;
   }
@@ -174,6 +177,11 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .video-container {
+    width: 100%;
+    padding-bottom: 56.65%; /* 16:9 Aspect Ratio (9 divided by 16 multiplied by 100) */
+  }
+
 }
 
 

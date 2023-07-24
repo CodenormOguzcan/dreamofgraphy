@@ -70,6 +70,12 @@ section {
 
 @media (max-width: 1024px){
   .col-1 { width: 33.333%; }
+  .intro-container h1 {
+    font-size: 36px;
+  }
+  .intro-container p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px){
@@ -81,6 +87,9 @@ section {
   .container {
     width: 95%;
   }
+  .intro-container h1 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px){
@@ -89,12 +98,5 @@ section {
   .col-3 { width: 100%; }
   .col-4 { width: 100%; }
   .col-5 { width: 100%; }
-
-  .intro-container > h1 {
-    font-size: 1.7rem;
-  }
-  .intro-container > p {
-    font-size: 1rem;
-  }
 }
 
