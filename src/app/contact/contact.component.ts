@@ -12,9 +12,7 @@ export class ContactComponent {
 
   onSubmit() {
     const message = {
-      Host: "smtp.elasticemail.com",
-      Username: "kontakt@dreamofgraphy.de",
-      Password: "83337F352597163F60A6A0D14E0A45460BA3",
+      SecureToken: "089f771b-0949-47f6-b207-b8dbccfa21bb",
       To: 'kontakt@dreamofgraphy.de',
       From: (document.getElementById("email") as HTMLInputElement).value,
       Subject: "Neuer Kontakt von DreamOfGraphy's Kontaktformular",
