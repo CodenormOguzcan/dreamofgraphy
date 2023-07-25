@@ -1,7 +1,6 @@
 /* === Leistungen =============================================================================== */
 .leistung{
   border: 3px solid #a0937d;
-  background: #ecefd8;
   margin: 5rem auto;
   width: 93%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
@@ -10,13 +9,13 @@
   width: 90%;
 }
 .row{
-  background-color: #ecefd8;
+  background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
-  border: darkolivegreen 0.5rem solid;
+  border: darkolivegreen 0.4rem solid;
 }
 
 [class*='col-']{
-  background-color: #ecefd8;
+  background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), inset 0 0 0.5rem rgba(255, 255, 255, 0.1);
   border: 3px solid #a0937d;
 }
@@ -30,7 +29,7 @@
   padding: 1.5rem;
 }
 .paket-container{
-  border: 3px solid #a0937d;
+  border: 0.2rem solid #849561;
   height: 20rem;
 }
 .paketinhalt {
@@ -51,6 +50,7 @@
 .hauptpaket-container{
   margin: 1rem;
   height: 30rem;
+  border: 0.2rem solid #849561;
 }
 .hauptpaket-container:hover{
   box-shadow: 0 0 2rem 1rem navajowhite;
@@ -82,7 +82,7 @@ p{
   font-weight: bold;
 }
 ul, li, .paketinhalt{
-  background-color: #ecefd8;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 /* ======== MEDIA SCREEN BEREICH =====================================================================================*/
 @media (max-width: 1700px) {
@@ -95,9 +95,6 @@ ul, li, .paketinhalt{
 }
 
 @media (max-width: 1210px) {
-  .container{
-    background-color: #fff1ce;
-  }
   .col-2 {
     min-width: 80%;
     height: auto;
@@ -111,6 +108,10 @@ ul, li, .paketinhalt{
   }
   .paketinhalt li{
     font-size: 0.8rem;
+  }
+  .hauptpaket-container, .hauptpaket-container .angebot {
+    border: 3px goldenrod solid;
+    box-shadow: 0 0 0.5rem rgba(218, 165, 32, 0.5), inset 0 0 0.5rem rgba(218, 165, 32, 0.8);
   }
 
   .order-box{

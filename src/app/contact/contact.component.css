@@ -4,6 +4,9 @@
   border: 0.4rem solid #849561;
   margin: 5rem 10rem;
 }
+.mail-container{
+  text-align: center;
+}
 .contact-container {
   width: 50%;
   min-width: 750px;
